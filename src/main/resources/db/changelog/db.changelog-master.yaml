@@ -2,3 +2,15 @@ databaseChangeLog:
   - include:
       file: 0.0.1/changelog-create-twitter-schema.sql
       relativeToChangeLogFile: true
+  - include:
+      file: 0.0.1/changelog-create-identity-schema.sql
+      relativeToChangeLogFile: true
+  - include:
+      file: 0.0.1/changelog-create-twitter-user_profiles-table.sql
+      relativeToChangeLogFile: true
+  - include:
+      file: 0.0.1/changelog-create-twitter-tweets-table.sql
+      relativeToChangeLogFile: true
+  - include:
+      file: 0.0.1/changelog-create-twitter-subscriptions-table.sql
+      relativeToChangeLogFile: true
