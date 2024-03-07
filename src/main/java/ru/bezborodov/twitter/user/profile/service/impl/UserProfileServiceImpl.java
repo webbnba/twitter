@@ -1,7 +1,7 @@
 package ru.bezborodov.twitter.user.profile.service.impl;
 
 import org.springframework.stereotype.Service;
-import ru.bezborodov.twitter.common.TwitterException;
+import ru.bezborodov.twitter.common.exception.TwitterException;
 import ru.bezborodov.twitter.user.profile.model.UserProfile;
 import ru.bezborodov.twitter.user.profile.repository.UserProfileRepository;
 import ru.bezborodov.twitter.user.profile.service.UserProfileService;

@@ -1,7 +1,7 @@
 package ru.bezborodov.twitter.user.subscription.usecase.impl;
 
 import org.springframework.stereotype.Component;
-import ru.bezborodov.twitter.common.TwitterException;
+import ru.bezborodov.twitter.common.exception.TwitterException;
 import ru.bezborodov.twitter.user.profile.model.UserProfile;
 import ru.bezborodov.twitter.user.subscription.mapper.UnsubscriptionRequestToSubscriptionMapper;
 import ru.bezborodov.twitter.user.subscription.model.Subscription;

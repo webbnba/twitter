@@ -1,7 +1,7 @@
 package ru.bezborodov.twitter.user.tweet.mapper.impl;
 
 import org.springframework.stereotype.Component;
-import ru.bezborodov.twitter.common.TwitterException;
+import ru.bezborodov.twitter.common.exception.TwitterException;
 import ru.bezborodov.twitter.user.tweet.mapper.TweetEditRequestToTweetMapper;
 import ru.bezborodov.twitter.user.tweet.model.Tweet;
 import ru.bezborodov.twitter.user.tweet.service.TweetService;

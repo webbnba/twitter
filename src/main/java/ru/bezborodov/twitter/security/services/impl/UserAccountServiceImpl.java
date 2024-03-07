@@ -1,7 +1,7 @@
 package ru.bezborodov.twitter.security.services.impl;
 
 import org.springframework.stereotype.Service;
-import ru.bezborodov.twitter.common.TwitterException;
+import ru.bezborodov.twitter.common.exception.TwitterException;
 import ru.bezborodov.twitter.security.model.UserAccount;
 import ru.bezborodov.twitter.security.repository.UserAccountRepository;
 import ru.bezborodov.twitter.security.services.UserAccountService;

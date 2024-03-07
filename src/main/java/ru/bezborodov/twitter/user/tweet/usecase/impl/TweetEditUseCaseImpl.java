@@ -1,7 +1,7 @@
 package ru.bezborodov.twitter.user.tweet.usecase.impl;
 
 import org.springframework.stereotype.Component;
-import ru.bezborodov.twitter.common.TwitterException;
+import ru.bezborodov.twitter.common.exception.TwitterException;
 import ru.bezborodov.twitter.user.profile.api.service.CurrentUserProfileApiService;
 import ru.bezborodov.twitter.user.profile.model.UserProfile;
 import ru.bezborodov.twitter.user.tweet.mapper.TweetEditRequestToTweetMapper;

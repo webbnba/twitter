@@ -2,7 +2,7 @@ package ru.bezborodov.twitter.security.mapper.impl;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import ru.bezborodov.twitter.common.TwitterException;
+import ru.bezborodov.twitter.common.exception.TwitterException;
 import ru.bezborodov.twitter.security.mapper.RegisterRequestToUserAccountMapper;
 import ru.bezborodov.twitter.security.model.UserAccount;
 import ru.bezborodov.twitter.security.model.UserRole;
