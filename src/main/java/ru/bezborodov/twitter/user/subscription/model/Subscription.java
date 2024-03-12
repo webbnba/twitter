@@ -24,9 +24,9 @@ public class Subscription {
     @Column(nullable = false, updatable = false)
     private Instant createdTimestamp;
 
-    @OneToOne
+    @ManyToOne
     private UserProfile follower;
 
-    @OneToOne
+    @ManyToOne
     private UserProfile followed;
 }
