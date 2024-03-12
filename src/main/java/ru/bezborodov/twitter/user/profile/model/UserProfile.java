@@ -1,11 +1,11 @@
 package ru.bezborodov.twitter.user.profile.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import ru.bezborodov.twitter.user.subscription.model.Subscription;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -20,4 +20,8 @@ public class UserProfile {
 
     @Column(nullable = false)
     private String imageLink;
+
+    @OneToMany
+    @JoinColumn(name = "followed_id", referencedColumnName = "id")
+    private List<Subscription> followers;
 }
