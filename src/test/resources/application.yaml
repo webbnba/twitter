@@ -1,6 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:tc:postgresql:13.3:///fakedb
-
-  liquibase:
-    change-log: classpath:/db/changelog/db.changelog-master.test.yaml
