@@ -45,12 +45,12 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/accounts/register").permitAll()
                         .requestMatchers("/api/v1/authentication/access_token").permitAll()
+                        .requestMatchers("/swagger-ui/**").permitAll()
+                        .requestMatchers("/v3/api-docs/**").permitAll()
                         .requestMatchers("/error").permitAll()
-                        .requestMatchers("/api/v1/demo/just-role-user").hasRole("USER")
-                        .requestMatchers("/api/v1/demo/just-role-admin").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
-                .httpBasic(Customizer.withDefaults())
+                .httpBasic(AbstractHttpConfigurer::disable)
                 .oauth2ResourceServer(oauth2ResourceServer ->
                         oauth2ResourceServer
                                 .jwt(jwt -> jwt.decoder(jwtDecoder()))
