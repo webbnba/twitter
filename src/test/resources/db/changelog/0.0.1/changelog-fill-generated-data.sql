@@ -1223,7 +1223,7 @@ SELECT email, password
 FROM public.generated_data;
 
 ANALYZE identity.user_accounts;
---rollback truncate table identity.user_accounts;
+--rollback truncate table identity.user_accounts CASCADE;
 
 
 --changeset ValeryBezborodov:fill-identity-user_accounts_roles-table
@@ -1253,7 +1253,7 @@ FROM public.generated_data gd
          JOIN identity.user_accounts ua ON gd.email = ua.username;
 
 ANALYZE twitter.user_profiles;
---rollback truncate table twitter.user_profiles;
+--rollback truncate table twitter.user_profiles CASCADE;
 
 
 --changeset ValeryBezborodov:fill-twitter-subscriptions-table

@@ -15,3 +15,6 @@ databaseChangeLog:
             separator: ;
             usePreparedStatements: true
             relativeToChangelogFile: true
+        - rollback:
+            - sql:
+                  sql: truncate table public.famous_quotes
